@@ -1,0 +1,71 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    title IZI.travel — a simple and free audioguide solution.
+    link href="./assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"
+    link href="//fast.fonts.net/cssapi/b7fd390a-6bd0-4f4c-a80f-8b8e357903b1.css" type="text/css" rel="stylesheet"
+    link rel="stylesheet" href="./assets/css/app.css"
+  body
+    #menu.page-menu
+      .centered
+        ul.main
+          li.link-intro
+            a href="//izi.travel/?locale=ru#intro"
+              | IZI.travel
+          li.link-overview
+            a href="//izi.travel/?locale=ru#overview"
+              | IZI.travel
+
+    .text-block-top
+      | В музее Бородинская панорама вы можете воспользоваться бесплатным мобильным аудиогидом по музеям и&nbsp;уличным турам OPAS:
+
+    #getapp
+      section#content
+        header
+          h1
+            span.s1
+              | OPAS — ваш
+            '
+            span.s2
+              strong персональный
+            '
+            span.s3
+              | аудиогид
+        p
+          | Это приложение не только проведет вас по музею и расскажет о его экспозиции, но и организует экскурсии по городу. Бесплатно! Но профессионально!
+        ul
+          li
+            a.ios href="//itunes.apple.com/app/opas/id554726752"
+              img src="./images/AppStore-button.png" alt="Get OPAS on Apple App Store" height="51" width="162"
+          li
+            a.android href="//play.google.com/store/apps/details?id=travel.opas.client"
+              img src="./images/Google-Play-button.png" alt="Get OPAS on Google Play" height="51" width="153"
+
+    .text-block-middle
+      | ...или музейным аудиогидом Маугри:
+
+    #getapp2
+      section#content
+        header
+          .logo
+            | Maugry мобильный гид
+        p
+          | Маугри расскажет вам об&nbsp;экспонатах с помощью вашего смартфона.
+        ul
+          li
+            a.ios href="//itunes.apple.com/us/app/maugry/id641514508"
+              img src="./images/AppStore-button.png" alt="Get OPAS on Apple App Store" height="51" width="162"
+          li
+            a.android href="//play.google.com/store/apps/details?id=com.msl.maugry"
+              img src="./images/Google-Play-button.png" alt="Get OPAS on Google Play" height="51" width="153"
+
+    javascript:
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44946633-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
